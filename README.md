@@ -13,7 +13,7 @@ Projem 2 hipoteze, bir LTV Proxy'e ve modele bağlı.
 Hipotezlerimi de modelin sonucuyla karşılaştıracağım.
 
 
-
+---
 
 
 ## HİPOTEZ-1
@@ -30,7 +30,7 @@ ilk izlenimim olarak beklentimi karşılayan ve karşılamayan bir tablo olduğu
 gördüğüm şey yaklaşık %27'lik pasif hesap ve %14'lük aktif hesap ve pasif olan hesapların aktif olanlara göre terk etme oranının daha yüksek olduğu. bu oran yaklaşık olarak 2 kat fark ediyor ve bu verilere güvenebileceğimi düşünüyorum çünkü 2 örneklem sahibiyim ve sayılar çok yüksek. Sonuç olarak pasif müşterileri aktif hale getirmek banka için daha fazla elde tutulan müşteri demek olabilir.
 
 
-
+---
 
 
 Bu hipotezleri yaptıktan sonra pseudo(yalancı) bir LTV proxy değeri oluşturup (balance x tenure) churn durumuna göre yorumladım.
@@ -40,6 +40,8 @@ Bu hipotezleri yaptıktan sonra pseudo(yalancı) bir LTV proxy değeri oluşturu
 ### Yorumlarım:
 Çıktıya göre kaçan müşteriler kalanlardan daha değerli gözüküyor. kaçanların medyan ltv proxy değeri yaklaşık 361.000 iken kalanların 198.000, yani neredeyse 2 kat fark var. burada dikkatimi çeken şey sadece ortalamanın değil medyanın da aynı yönü göstermesi, bu da bu farkın birkaç aşırı zengin müşteriden değil tipik kaçan müşteriden kaynaklandığını gösteriyor. yani banka değersiz müşterilerini değil tam tersine değerli müşterilerini kaybediyor, bu da churnu ciddi bir maliyet sorununa çeviriyor.
 
+
+---
 
 
 Son olarak eğittiğim modelde churn üzerinde özelliklerin etkisini düşündüm. Bu modeli eğitirken bazı özellikleri direkt elerken bazı özellikleri de ayırarak daha iyi bir sonuç almayı düşündüm. 
@@ -59,8 +61,7 @@ Modelimin verdiği sonuç şu şekilde:
 Özellik-Churn dengesi grafiğim H1 ve H2 hipotezimi onayladı. H1'de elle bulduğum products_number en önemli ikinci faktörken, H2'de bulduğum active_member ise en önemli değişkenler arasında. sezgisel analizimle modelim aynı sonuca vardı. burada beklemediğim etken age'di. ayrıca getdummies ile ayırdığım ülkeler de büyük bir etken olarak karşımıza çıkıyor.
 
 
-
-
+---
 
 
 Veri:10.000 müşterilik banka verisi --> https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
